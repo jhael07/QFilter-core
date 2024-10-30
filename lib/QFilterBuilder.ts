@@ -45,6 +45,7 @@ class QFilterBuilder<T> {
       parentId,
       type: "comparisonOperator",
     };
+
     if (this.filters.length > 0 && this.filters.at(-1)?.type !== "logicalOperator") this.and();
     this.filters.push(body);
 
